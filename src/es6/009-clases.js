@@ -1,0 +1,55 @@
+//Declarando
+// class User {
+//     constructor(name) {
+//         this.name = name;
+//     }
+
+//     //Metodos
+//     speak() {
+//         return 'Hello';
+//     }
+
+//     greeting() {
+//         return `${this.speak()} ${this.name}`
+//     }
+// }
+
+
+// //INstanciar
+// const ana = new User('Ana');
+// console.log(ana.greeting());
+
+
+//Setters Getters 
+
+
+class User {
+
+    //Constructor
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    //Métodos
+    speak() {
+        return "Hello";
+    }
+
+    greeting() {
+        return `${this.speak()} ${this.name}`
+    }
+
+    get uAge() {
+        return this.age;
+    }
+
+    set uAge(n) {
+        this.age = n
+    }
+}
+
+
+const mike = new User("David", 15)
+
+console.log(mike.uAge);
