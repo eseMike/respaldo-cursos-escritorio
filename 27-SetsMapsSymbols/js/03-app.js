@@ -1,0 +1,25 @@
+const cliente = new Map();
+
+cliente.set("nombre", "Karen");
+cliente.set("tipo", "premium");
+cliente.set("saldo", 3000);
+console.log(cliente);
+
+console.log(cliente.size);
+console.log(cliente.has("nombre"));
+console.log(cliente.has("nombre2"));
+console.log(cliente.get("nombre"));
+
+cliente.delete("saldo");
+console.log(cliente);
+
+const paciente = new Map([
+   ["nombre", "paciente"],
+   ["cuarto", 2],
+]);
+
+paciente.set("dr", "dr Asignado");
+console.log(paciente);
+paciente.forEach((elemento) => {
+   console.log(elemento);
+});
